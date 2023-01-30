@@ -10315,6 +10315,7 @@ readers do not read off random characters that represent icons */
   display: flex;
   align-items: center;
   text-decoration: none;
+  margin-left: 10%;
 }
 
 .header .titre h1 {
@@ -10330,7 +10331,6 @@ readers do not read off random characters that represent icons */
 .navbar {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -10350,7 +10350,7 @@ readers do not read off random characters that represent icons */
   text-decoration: none;
   font-size: 1rem;
   font-weight: 600;
-  color: #7f7f90;
+  color: gray;
   transition: 0.3s;
   position: relative;
 }
@@ -10376,6 +10376,29 @@ readers do not read off random characters that represent icons */
   width: 100%;
 }
 
+.btnbooktable {
+  font-size: 1rem;
+  color: #fff;
+  background: rgb(134, 209, 209);
+  padding: 8px 20px;
+  margin-right: 8%;
+  border-radius: 50px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.btnbooktable:hover {
+  color: #fff;
+  background: red;
+}
+
 h2 {
   color: red;
+}
+
+body {
+  width: 100%;
+  direction: flex;
+  align-items: center;
+  justify-content: center;
 }

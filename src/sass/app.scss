@@ -25,3 +25,9 @@ $fa-font-path : "../../node_modules/@fortawesome/fontawesome-free/webfonts";
 @import "./modules/section11";
 @import "./modules/footer";
 
+body{
+    width: 100%;
+    direction: flex;
+    align-items: center;
+    justify-content: center;
+}

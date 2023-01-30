@@ -27,6 +27,7 @@
     display: flex;
     align-items: center;
     text-decoration: none;
+    margin-left: 10%;
 }
 
 .header .titre h1 {
@@ -43,7 +44,6 @@
 .navbar {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -53,22 +53,25 @@
     list-style: none;
     align-items: center;
 }
+
 .navbar>ul>li {
     padding: 10px 0 10px 28px;
 }
 
-.navbar a{
+.navbar a {
     display: flex;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
-    color: #7f7f90;
+    color: gray;
     transition: 0.3s;
     position: relative;
 }
+
 .navbar a:hover {
     color: black;
 }
+
 .navbar a:before {
     content: "";
     position: absolute;
@@ -81,9 +84,27 @@
     transition: all 0.3s ease-in-out 0s;
 }
 
-.navbar a:hover:before
-{
+.navbar a:hover:before {
     visibility: visible;
     width: 100%;
 
+}
+
+//Bouton BOOK TABLE 
+
+.btnbooktable {
+    font-size: 1rem;
+    color: #fff;
+    background: $vert;
+    padding: 8px 20px;
+    margin-right: 8%;
+    border-radius: 50px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+
+.btnbooktable:hover {
+    color: #fff;
+    background: red;
 }
