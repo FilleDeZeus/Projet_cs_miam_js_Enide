@@ -3,20 +3,20 @@
     padding-right: 15px;
     padding-left: 15px;
 }
-
-
-.section2 .about-img {
+.section2 .souscontainer{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.section2-img {
     min-height: 500px;
+    width: 100%;
+    position: relative;
+    background-image: url(../../../public/img/section2_about/about.jpg);
 }
 
-.section2 h2 {
-    font-weight: 700;
-    font-size: 36px;
-    margin-bottom: 30px;
-    // font-family: var(--font-secondary);
-}
-
-.section2 .call-us {
+.section2 .call {
     left: 10%;
     right: 10%;
     bottom: 10%;
@@ -24,21 +24,32 @@
     box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
     padding: 20px;
     text-align: center;
+    position: absolute;
 }
 
-.section2 .call-us h4 {
+.section2 .call h4 {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 5px;
     // font-family: var(--font-default);
 }
 
-.section2 .call-us p {
+.section2 .call p {
     font-size: 28px;
     font-weight: 700;
     color: $vert;
 }
 
+.textSection2{
+    display: flex;
+    align-items: flex-end;
+}
+// .section2 .content {
+//     padding-left: 1000px;
+// }
+.textItalique{
+    font-style: italic;
+}
 .section2 .content ul {
     list-style: none;
     padding: 0;
@@ -57,9 +68,18 @@
     color: $vert;
 }
 
-.section2 .content p:last-child {
-    margin-bottom: 0;
+// .section2 .content p:last-child {
+//     margin-bottom: 0;
+// }
+.imgVideo{
+    margin-top: 20px;
+    position: relative;
+    
 }
+// .imgVideo img{
+//     max-width: 100%;
+//     height: auto;
+// }
 
 .section2 .play-btn {
     width: 94px;
@@ -72,6 +92,7 @@
     top: calc(50% - 47px);
     overflow: hidden;
 }
+
 
 .section2 .play-btn:before {
     content: "";
@@ -130,25 +151,25 @@
 }
 
 .section2 .play-btn:hover:after {
-    border-left: 15px solid var(--color-primary);
+    border-left: 15px solid $vert;
     transform: scale(20);
 }
 
 @-webkit-keyframes pulsate-btn {
     0% {
-        transform: scale(0.6, 0.6);
+        transform: scale(0.8, 0.8);
         opacity: 1;
     }
 
     100% {
-        transform: scale(1, 1);
+        transform: scale(1.5, 1.5);
         opacity: 0;
     }
 }
 
 @keyframes pulsate-btn {
     0% {
-        transform: scale(0.6, 0.6);
+        transform: scale(0.8, 0.8);
         opacity: 1;
     }
 
