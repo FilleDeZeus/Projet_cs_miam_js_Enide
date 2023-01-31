@@ -25,9 +25,44 @@ $fa-font-path : "../../node_modules/@fortawesome/fontawesome-free/webfonts";
 @import "./modules/section11";
 @import "./modules/footer";
 
-body{
+body {
     width: 100%;
     direction: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
+}
+
+// section {
+//     overflow: hidden;
+//     padding: 80px 0;
+// }
+
+.section-bg {
+    background-color: #eee;
+}
+
+.section-header {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-header h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #7f7f90;
+    
+}
+
+.section-header p {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.section-header p span {
+    color: $vert;
 }
