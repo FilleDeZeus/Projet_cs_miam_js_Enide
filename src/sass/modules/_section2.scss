@@ -14,6 +14,7 @@
     width: 100%;
     position: relative;
     background-image: url(../../../public/img/section2_about/about.jpg);
+    background-repeat: no-repeat;
 }
 
 .section2 .call {
@@ -43,10 +44,12 @@
 .textSection2{
     display: flex;
     align-items: flex-end;
+    flex: 0 0 41.667%;
+    max-width: 41.667%;
 }
-// .section2 .content {
-//     padding-left: 1000px;
-// }
+.section2 .content {
+    padding-left: 25px;
+}
 .textItalique{
     font-style: italic;
 }

@@ -10294,16 +10294,12 @@ readers do not read off random characters that represent icons */
   align-items: center;
   box-sizing: border-box;
   position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   background-color: white;
   height: 100px;
-  border-bottom: 1px solid gray;
   z-index: 999;
 }
 
@@ -10513,6 +10509,7 @@ readers do not read off random characters that represent icons */
   width: 100%;
   position: relative;
   background-image: url(../../../public/img/section2_about/about.jpg);
+  background-repeat: no-repeat;
 }
 
 .section2 .call {
@@ -10541,6 +10538,12 @@ readers do not read off random characters that represent icons */
 .textSection2 {
   display: flex;
   align-items: flex-end;
+  flex: 0 0 41.667%;
+  max-width: 41.667%;
+}
+
+.section2 .content {
+  padding-left: 25px;
 }
 
 .textItalique {
@@ -10663,23 +10666,65 @@ readers do not read off random characters that represent icons */
     opacity: 0;
   }
 }
-.why-us .why-box {
+.section3 {
+  background-color: #eee;
+}
+
+.section3 .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.section3 .souscontainer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.section3 .grandbox {
+  display: flex;
+  flex: 0 0 33.333%;
+  max-width: 33.3333%;
+}
+
+.section3 .petitsbox {
+  display: flex;
+  align-items: center;
+  flex: 0 0 66.667%;
+  max-width: 66.667%;
+}
+
+.section3 .petitbox {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.section3 .box {
+  display: flex;
+  flex: 0 0 33.333%;
+  max-width: 33.3333%;
+}
+
+.section3 .why-box {
   padding: 30px;
-  background: var(--color-primary);
+  background: rgb(134, 209, 209);
   color: #fff;
 }
 
-.why-us .why-box h3 {
+.section3 .why-box h3 {
   font-weight: 700;
   font-size: 34px;
   margin-bottom: 30px;
 }
 
-.why-us .why-box p {
+.section3 .why-box p {
   margin-bottom: 30px;
 }
 
-.why-us .why-box .more-btn {
+.section3 .why-box .more-btn {
   display: inline-block;
   background: rgba(255, 255, 255, 0.3);
   padding: 6px 30px 8px 30px;
@@ -10688,16 +10733,20 @@ readers do not read off random characters that represent icons */
   transition: all ease-in-out 0.4s;
 }
 
-.why-us .why-box .more-btn i {
+.section3 .why-box .more-btn i {
   font-size: 14px;
 }
 
-.why-us .why-box .more-btn:hover {
+.section3 .why-box .more-btn:hover {
   color: var(--color-primary);
   background: #fff;
 }
 
-.why-us .icon-box {
+.section3 .icon-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background: #fff;
   padding: 40px 30px;
@@ -10707,7 +10756,7 @@ readers do not read off random characters that represent icons */
   transition: 0.3s;
 }
 
-.why-us .icon-box i {
+.section3 .icon-box i {
   color: var(--color-primary);
   margin-bottom: 30px;
   font-size: 32px;
@@ -10721,20 +10770,20 @@ readers do not read off random characters that represent icons */
   height: 64px;
 }
 
-.why-us .icon-box h4 {
+.section3 .icon-box h4 {
   font-size: 20px;
   font-weight: 400;
   margin: 0 0 30px 0;
   font-family: var(--font-secondary);
 }
 
-.why-us .icon-box p {
+.section3 .icon-box p {
   font-size: 15px;
   color: #6c757d;
 }
 
 @media (min-width: 1200px) {
-  .why-us .icon-box:hover {
+  .section3 .icon-box:hover {
     transform: scale(1.1);
   }
 }
