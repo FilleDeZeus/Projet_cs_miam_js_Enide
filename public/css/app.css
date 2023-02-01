@@ -11038,7 +11038,30 @@ readers do not read off random characters that represent icons */
   background-color: var(--color-primary);
 }
 
-.chefs .chef-member {
+.section8 {
+  background-color: #fff;
+}
+
+.section8 .souscontainer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.section8 .chef {
+  display: flex;
+  align-items: stretch;
+  flex: 0 0 33.333%;
+  max-width: 33.3333%;
+}
+
+.section8 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section8 .chef-member {
   overflow: hidden;
   text-align: center;
   border-radius: 5px;
@@ -11047,12 +11070,12 @@ readers do not read off random characters that represent icons */
   transition: 0.3s;
 }
 
-.chefs .chef-member .member-img {
+.section8 .chef-member .member-img {
   position: relative;
   overflow: hidden;
 }
 
-.chefs .chef-member .member-img:after {
+.section8 .chef-member .member-img:after {
   position: absolute;
   content: "";
   left: 0;
@@ -11064,7 +11087,7 @@ readers do not read off random characters that represent icons */
   z-index: 1;
 }
 
-.chefs .chef-member .social {
+.section8 .chef-member .social {
   position: absolute;
   right: -100%;
   top: 30px;
@@ -11075,7 +11098,7 @@ readers do not read off random characters that represent icons */
   z-index: 2;
 }
 
-.chefs .chef-member .social a {
+.section8 .chef-member .social a {
   transition: color 0.3s;
   color: rgba(55, 55, 63, 0.4);
   margin: 15px 12px;
@@ -11084,33 +11107,33 @@ readers do not read off random characters that represent icons */
   text-align: center;
 }
 
-.chefs .chef-member .social a:hover {
+.section8 .chef-member .social a:hover {
   color: rgba(55, 55, 63, 0.9);
 }
 
-.chefs .chef-member .social i {
+.section8 .chef-member .social i {
   font-size: 18px;
 }
 
-.chefs .chef-member .member-info {
+.section8 .chef-member .member-info {
   padding: 10px 15px 20px 15px;
 }
 
-.chefs .chef-member .member-info h4 {
+.section8 .chef-member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
-  color: var(--color-secondary);
+  color: black;
 }
 
-.chefs .chef-member .member-info span {
+.section8 .chef-member .member-info span {
   display: block;
   font-size: 14px;
   font-weight: 400;
   color: rgba(33, 37, 41, 0.4);
 }
 
-.chefs .chef-member .member-info p {
+.section8 .chef-member .member-info p {
   font-style: italic;
   font-size: 14px;
   padding-top: 15px;
@@ -11118,12 +11141,12 @@ readers do not read off random characters that represent icons */
   color: rgba(33, 37, 41, 0.7);
 }
 
-.chefs .chef-member:hover {
+.section8 .chef-member:hover {
   transform: scale(1.08);
   box-shadow: 0px 0 30px rgba(55, 55, 63, 0.15);
 }
 
-.chefs .chef-member:hover .social {
+.section8 .chef-member:hover .social {
   right: 8px;
   opacity: 1;
 }
