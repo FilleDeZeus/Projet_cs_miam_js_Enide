@@ -1,13 +1,17 @@
 .section8{
     background-color: #fff;
 }
-
-.section8 .souscontainer{
+// .section8 .container{
+//     padding-right: 15px;
+//     padding-left: 15px;
+// }
+.section8 .sousContainer{
     display: flex;
     flex-direction: row;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
+
 .section8 .chef{
     display: flex;
     align-items: stretch;

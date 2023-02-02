@@ -15,7 +15,7 @@
     padding-left: 15px;
 }
 
-.section1 .souscontainer{
+.section1 .sousContainer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -76,7 +76,7 @@
     color: rgba(206, 18, 18, 0.8);
 }
 
-.souscontainer .textSection1{
+.sousContainer .textSection1{
     flex: 0 0 41.667%;
     max-width: 41.667%;
     //order: 1;
@@ -87,7 +87,7 @@
     text-align: start;
     //width: 50%;
 }
-.souscontainer .section1{
+.sousContainer .section1{
     order: 2;
 }
 
@@ -98,7 +98,7 @@
         text-align: center;
     }
 }
-.souscontainer img{
+.sousContainer img{
     max-width: 100%;
     height: auto;
 }

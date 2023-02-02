@@ -6,31 +6,31 @@
     padding-right: 15px;
     padding-left: 15px;
 }
-.section3 .souscontainer{
+.section3 .sousContainer{
     display: flex;
     flex-direction: row;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
-.section3 .grandbox{
+.section3 .caseChoixGrand{
     display: flex;
     flex: 0 0 33.333%;
     max-width: 33.3333%;
 }
-.section3 .petitsbox{
+.section3 .casesChoixPetit{
     display: flex;
     align-items: center;
     flex: 0 0 66.667%;
     max-width: 66.667%;
 }
-.section3 .petitbox{
+.section3 .caseChoixPetit{
     display: flex;
     flex-direction: row;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     height: 100%;
 }
-.section3 .box{
+.section3 .caseChoix{
     display: flex;
     flex: 0 0 33.333%;
     max-width: 33.3333%;
