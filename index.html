@@ -25,12 +25,31 @@
                 <li><a href="http://">Contact</a></li>
             </ul>
         </nav>
-        <a class="btnbooktable" href="#booktable">Book a Table</a>
+        <button class="btnbooktable">Book a Table</button>
 
     </header>
-    
+    <div id="myModal" class="btnbooktable">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="contentModal">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Password">
+                <button>Log in</button>
+                <hr>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Address">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Password">
+                <button>Sign up</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 1 - EN-TETE -->
     <section class="section1">
-        <div class="container"></div>
+        <div class="container">
         <div class="sousContainer">
 
             <div class="textSection1">
@@ -38,7 +57,7 @@
                 <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. um quas beatae cumque eum
                     quaerat.</p>
                 <div>
-                    <a class="btnbooktable" href="#bookatable">Book a Table</a>
+                    <button class="btnbooktable">Book a Table</button>
                     <a class="btnvideo" href="https://www.youtube.com/watch?v=26MgbXVn_bk"><i
                             class="fa-regular fa-circle-play"></i><span>Watch Video</span> </a></div>
             </div>
@@ -46,6 +65,7 @@
                 <img src="./public/img/section1/hero-img.png" alt="">
             </div>
         </div>
+    </div>
     </section>
 
     <section class="section2">
@@ -462,7 +482,7 @@
         </section>
 
         <!-- SECTION 10 --GALLERY -->
-        <section id="gallery">
+        <section class="gallery">
             <div class="container">
                 <div class="title">
                     <p class="titleS">GALLERY</p>
@@ -472,28 +492,28 @@
                 <div class="galleryCarousel">
                     <div class="galleryCarouselItems">
                         <div class="galleryCarouselItem">
-                            <img class="imgActiveGallery" src="./public/image/gallery/gallery-1.jpg" alt="">
+                            <img  href="./public/image/gallery/gallery-1.jpg" src="./public/image/gallery/gallery-1.jpg" alt="">
                         </div>
                         <div class="galleryCarouselItem">
-                            <img src="./public/img/section10_gallery/gallery-1.jpg" alt="">
+                            <img href="./public/image/gallery/gallery-2.jpg" src="./public/img/section10_gallery/gallery-1.jpg" alt="">
                         </div>
                         <div class="galleryCarouselItem">
-                            <img src="./public/img/section10_gallery/gallery-3.jpg" alt="">
+                            <img href="./public/image/gallery/gallery-3.jpg" src="./public/img/section10_gallery/gallery-3.jpg" alt="">
                         </div>
                         <div class="galleryCarouselItem">
-                            <img src="./public/img/section10_gallery/gallery-4.jpg" alt="">
+                            <img href="./public/image/gallery/gallery-4.jpg" src="./public/img/section10_gallery/gallery-4.jpg" alt="">
                         </div>
                         <div class="galleryCarouselItem">
-                            <img src="./public/img/section10_gallery/gallery-5.jpg" alt="">
+                            <img class="imgActiveGallery" href="./public/image/gallery/gallery-5.jpg" src="./public/img/section10_gallery/gallery-5.jpg" alt="">
                         </div>
                         <div class="galleryCarouselItem">
-                            <img src="./public/img/section10_gallery/gallery-6.jpg" alt="">
+                            <img href="./public/image/gallery/gallery-6.jpg" src="./public/img/section10_gallery/gallery-6.jpg" alt="">
                         </div>
                         <div class="galleryCarouselItem">
-                            <img src="./public/img/section10_gallery/gallery-7.jpg" alt="">
+                            <img href="./public/image/gallery/gallery-7.jpg" src="./public/img/section10_gallery/gallery-7.jpg" alt="">
                         </div>
                         <div class="galleryCarouselItem">
-                            <img src="./public/img/section10_gallery/gallery-8.jpg" alt="">
+                            <img href="./public/image/gallery/gallery-8.jpg" src="./public/img/section10_gallery/gallery-8.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -588,7 +608,7 @@
                 
                     <button type="submit">Send Message</button>
                 </form>
-                <!--End Contact Form -->
+               
 
             </div>
         </section>

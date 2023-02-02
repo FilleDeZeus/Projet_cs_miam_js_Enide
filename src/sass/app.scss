@@ -33,12 +33,6 @@ body {
     margin: 0;
 }
 
-// section {
-//     overflow: hidden;
-//     padding: 80px 0;
-// }
-
-
 
 .section-header {
     text-align: center;
@@ -59,123 +53,81 @@ body {
     margin: 0;
     font-size: 48px;
     font-weight: 400;
+    font-family:"CookieandMilk";
+
 }
 
 .section-header p span {
     color: $vert;
 }
 
-// #modeUp {
-//     position: fixed;
-//     bottom: 30px;
-//     right: 30px;
-//     display: flex;
-//     z-index: 1;
-
-//     .changeMode {
-//         background-color: $thisGreen;
-//         color: white;
-//         padding: 10px 12px;
-//         font-size: 20px;
-//         border-radius: 25px;
-//         margin: 10px;
-//         cursor: pointer;
-
-//         .fa-sun {
-//             display: none;
-//         }
-//     }
-//     .changeMode:hover {
-//         background-color: $thisBrown;
-//     }
-
-//     .pageUp {
-//         background-color: $thisGreen; 
-//         color: white;       
-//         padding: 10px 14px;
-//         font-size: 20px;
-//         border-radius: 25px;
-//         margin: 10px;
-//         cursor: pointer;
-
-//     }
-//     .pageUp:hover {
-//         background-color: $thisBrown;
-//     }
-// }
-
-// //DARK MODE--------------------------------------------
-// .darkMode {
-//     background-color: black;
-
-//     header {
-//         background-color: black;
-
-//         h1 {
-//             color: white;
-//         }
-
-//         .btnActiveNav {
-//             color: white;
-//         }
-
-//     }
-
-//     #modeUp {
-//         .fa-moon {
-//             display: none;
-//         }
-
-//         .fa-sun {
-//             display: inline;
-//         }
-//     }
+#myModal {
     
-//     #about {
-//         color: white;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 
-//         .titleL {
-//             color: white;
-//         }
 
-//         #about1imgTxt {
-//             p {
-//                 color: black;
-//             }
-//             .green {
-//                 color: $thisGreen;
-//             }
-//         }
-//     }
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    max-width: 400px;
 
-//     #menu {
-//         color: white;
+    .contentModal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
 
-//         .titleL {
-//             color: white;
-//         }
-//     }
+        input {
+            width: 100%;
+            height: 40px;
+            margin: 10px 0;
+        }
 
-//     #events {
-//         .titleL {
-//             color: white;
-//         }
-//     }
+        button {
+            background-color: $vert;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
 
-//     #book {
-//         .titleL {
-//             color: white;
-//         } 
-//     }
+        button:hover {
+            background-color: red;
+        }
 
-//     #contact {
-//         .titleL {
-//             color: white;
-//         }
-        
-//         .contactForm {
-//             // box-shadow: 0px 0px 26px -7px rgba(255, 255, 255, 0.5)
-//             background-color: $thisGrey;
-//         }
-//     }
-// }
+        hr {
+            width: 30%;
+            margin: 20px;
+        }
+    }
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+}
