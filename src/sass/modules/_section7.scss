@@ -1,10 +1,119 @@
 
-.slide1{
-    background-image: url(../../../public/img/section7_Event/events-1.jpg);
+// .slide1{
+//     background-image: url(../../../public/img/section7_Event/events-1.jpg);
+// }
+// .slide2{
+//     background-image: url(../../../public/img/section7_Event/events-2.jpg);
+// }
+// .slide3{
+//     background-image: url(../../../public/img/section7_Event/events-3.jpg);
+// }
+#events {
+
+    .eventsCarousel {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 50px;
+        
+        .eventsView {
+            width: 172%;
+            display: flex;
+            transition-duration: 1s;
+            // transform: translateX(-20%);
+
+            .eventsCarouselItem {
+                position: relative;
+                width: 32%;
+                height: 650px;
+                margin-right: 2%;
+                overflow: hidden;
+
+                .eventsTxt {
+                    position: absolute;
+                    bottom: 0;
+                    color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                    padding: 30px;
+                    h3 {
+                        font-size: 30px;
+                        margin: 10px 0;
+                    }
+
+                    h4 {
+                        font-size: 40px;
+                        padding: 5px 0;
+                        border-bottom: 3px solid $vert;
+                        display: inline;
+                    }
+
+                    p {
+                        font-size: 18px;
+                    }
+                }
+                .eventsImg {
+                    position: absolute;
+                    top: 0;
+                    z-index: -1;
+                    background-color: black;
+
+                    img {
+                        opacity: 0.4;
+                    }
+                }
+            }
+        }
+    }
+
+    .carouselBtnEvents {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+
+        button {
+            background-color: grey;
+            width: 10px;
+            height: 10px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .btnActiveEvents {
+            background-color: $vert;
+        }
+    }
 }
-.slide2{
-    background-image: url(../../../public/img/section7_Event/events-2.jpg);
+body {
+    margin: 0;
 }
-.slide3{
-    background-image: url(../../../public/img/section7_Event/events-3.jpg);
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+}
+
+.titleS {
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+}
+
+.titleL {
+    font-family: "CookieandMilk";
+    color: black;
+    font-size: 40px;
+    margin: 0%;
+}
+
+.green {
+    color: $vert;
+}
+
+.marginTopBot {
+    margin-top: 100px;
+    margin-bottom: 100px;
 }

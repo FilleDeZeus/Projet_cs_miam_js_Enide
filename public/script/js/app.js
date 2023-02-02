@@ -1,34 +1,76 @@
+// ------------PARTIE JS ---------
+//import {menuDiner,menuBreakfast,menuLunch,menuStarters,lunchClick,startClick,breakClick,dinnerClick} from "./module/menu.js"
+
+//events carousel
+let eventsCarouselBtn = document.querySelectorAll(".carouselBtnEvents > button");
+let eventsView = document.querySelector(".eventsView");
+
+for (let i = 0; i < eventsCarouselBtn.length; i++) {
+    eventsCarouselBtn[i].addEventListener("click", ()=>{
+        eventsView.style.transform = `translateX(${-(eventsCarouselBtn[i].value)*20}%)`
+        //btn active color
+        document.querySelector(".btnActiveEvents").className="";
+        eventsCarouselBtn[i].className="btnActiveEvents";
+    })
+}
+//-------------------------------------------------------
+//events carousel
+let galleryCarouselBtn = document.querySelectorAll(".carouselBtnGallery > button");
+let galleryCarousel = document.querySelector(".galleryCarousel");
+let galleryItems = document.querySelectorAll(".galleryCarouselItem > img");
+
+// console.log(galleryCarouselBtn);
+// console.log(galleryItems);
+
+for (let i = 0; i < galleryCarouselBtn.length; i++) {
+    galleryCarouselBtn[i].addEventListener("click", ()=>{
+        galleryCarousel.style.transform = `translateX(${40 -(galleryCarouselBtn[i].value)*20}%)`
+        //btn active color
+        document.querySelector(".btnActiveGallery").className="";
+        galleryCarouselBtn[i].className="btnActiveGallery";
+        //img active
+        document.querySelector(".imgActiveGallery").className="";
+        galleryItems[i].className="imgActiveGallery"
+    })
+}
+
 let section5 = document.getElementById('section5');
-let container1 = document.querySelector('.container.s5')
-let container2 = document.querySelector('.container.s5titre')
+let container1 = document.querySelector('.navMenu')
+let container2 = document.querySelector('.contenuMenu')
 
 let divStarters = document.createElement('div');
 divStarters.className = "divStarters";
-divStarters.textContent = "Starters";
+let navStarters = document.createElement('h4');
+navStarters.textContent = "Starters";
+divStarters.appendChild(navStarters)
 
 let divBreakfast = document.createElement('div');
 divBreakfast.className = "divStarters";
-divBreakfast.textContent = "Breakfast";
-
+let navBreak = document.createElement('h4');
+navBreak.textContent = "Breakfast";
+divBreakfast.appendChild(navBreak)
 
 let divLunch = document.createElement('div');
 divLunch.className = "divStarters";
-divLunch.textContent = "Lunch";
-
+let navLunch = document.createElement('h4');
+navLunch.textContent = "Lunch";
+divLunch.appendChild(navLunch)
 
 let divDinner = document.createElement('div');
 divDinner.className = "divStarters";
-divDinner.textContent = "Dinner";
+let navDinner = document.createElement('h4');
+navDinner.textContent = "Dinner";
+divDinner.appendChild(navDinner)
 
 container1.innerHTML += divStarters.outerHTML;
 container1.innerHTML += divBreakfast.outerHTML;
 container1.innerHTML += divLunch.outerHTML
 container1.innerHTML += divDinner.outerHTML
 
-let divClick1 = document.querySelectorAll('.divStarters')[0]
-let divClick2 = document.querySelectorAll('.divStarters')[1]
-let divClick3 = document.querySelectorAll('.divStarters')[2]
-let divClick4 = document.querySelectorAll('.divStarters')[3]
+ let startClick = document.querySelectorAll('.divStarters')[0]
+ let breakClick = document.querySelectorAll('.divStarters')[1]
+ let lunchClick = document.querySelectorAll('.divStarters')[2]
+ let dinnerClick = document.querySelectorAll('.divStarters')[3]
 
 let titreMenu = document.createElement('h5');
 titreMenu.className = "titreMenu";
@@ -42,8 +84,8 @@ titreStarters.textContent = "Starters";
 
 
 
-let container = document.createElement("div");
-container.id = "containerJS";
+let souscontainer= document.createElement("div");
+souscontainer.id = "souscontainer";
 
 let ligne1 = document.createElement("div");
 ligne1.classList.add("row");
@@ -51,13 +93,15 @@ ligne1.classList.add("row");
 let ligne2 = document.createElement("div");
 ligne2.classList.add("row");
 
+
+
 //-----Magnam Tiste-----
 let image1 = document.createElement("div");
-image1.classList.add("col");
+image1.classList.add("image");
 image1.innerHTML =  '<img src="./public/img/section5_menu/menu-item-1.png" alt="">';
 
 let magnamTiste = document.createElement("h3")
-magnamTiste.classList.add('p1')
+magnamTiste.classList.add('titre')
 magnamTiste.textContent = 'Magnam Tiste'
 
 let magnamDescri = document.createElement("p")
@@ -65,116 +109,107 @@ magnamDescri.classList.add('Descri')
 magnamDescri.textContent = 'lorem, delen , trataro, filede, nerada'
 
 let prixMagnam = document.createElement('p')
-prixMagnam.classList.add('blue')
+prixMagnam.classList.add('prix')
 prixMagnam.textContent = '$5.95'
 
 //--------Eos Luibusdam------
 let image2 = document.createElement("div");
-image2.classList.add("col");
+image2.classList.add("image");
 image2.innerHTML =  '<img src="./public/img/section5_menu/menu-item-4.png" alt="">';
 
 let eosLuibusdam = document.createElement("h3")
-eosLuibusdam.classList.add('p1')
+eosLuibusdam.classList.add('titre')
 eosLuibusdam.textContent = 'Eos Luibusdam' 
 
 let eosDescri = document.createElement("p")
 eosDescri.classList.add('Descri')
 eosDescri.textContent = 'lorem, delen , trataro, filede, nerada'
 
+let prixEos = document.createElement('p')
+prixEos.classList.add('prix')
+prixEos.textContent = '$12.95'
 
 //----------Aut Luia--------
 let image3 = document.createElement("div");
-image3.classList.add("col");
+image3.classList.add("image");
 image3.innerHTML = '<img src="./public/img/section5_menu/menu-item-2.png" alt="">';
 
-
 let autLuia = document.createElement("h3")
-autLuia.classList.add('p1')
+autLuia.classList.add('titre')
 autLuia.textContent = 'Aut Luia'
 
 let autDescri = document.createElement("p")
 autDescri.classList.add('Descri')
 autDescri.textContent = 'lorem, delen , trataro, filede, nerada'
 
+let prixAut = document.createElement('p')
+prixAut.classList.add('prix')
+prixAut.textContent = '$14.95'
+
 //-------Eos Luibusdam 2 
 let image4 = document.createElement("div");
-image4.classList.add("col");
+image4.classList.add("image");
 image4.innerHTML = '<img src="./public/img/section5_menu/menu-item-5.png" alt="">';
 
 let eosLuibusdam2 = document.createElement("h3")
-eosLuibusdam2.classList.add('p1')
+eosLuibusdam2.classList.add('titre')
 eosLuibusdam2.textContent = 'Eos Luibusdam'
 
 let eos2Descri = document.createElement("p")
 eos2Descri.classList.add('Descri')
 eos2Descri.textContent = 'lorem, delen , trataro, filede, nerada'
 
+let prixEos2 = document.createElement('p')
+prixEos2.classList.add('prix')
+prixEos2.textContent = '$12.95'
+
 
 //-------Est Eligendi-------
 
 let image5 = document.createElement("div");
-image5.classList.add("col");
+image5.classList.add("image");
 image5.innerHTML = '<img src="./public/img/section5_menu/menu-item-3.png" alt="">';
 
 let estEligendi = document.createElement("h3")
-estEligendi.classList.add('p1')
+estEligendi.classList.add('titre')
 estEligendi.textContent = 'Est Eligendi'
-
 
 let estDescri = document.createElement("p")
 estDescri.classList.add('Descri')
 estDescri.textContent = 'lorem, delen , trataro, filede, nerada'
 
+let prixEst = document.createElement('p')
+prixEst.classList.add('prix')
+prixEst.textContent = '$8.95'
+
 //-------Laboriosam Direva-------
 
 let image6 = document.createElement("div");
-image6.classList.add("col");
+image6.classList.add("image");
 image6.innerHTML = '<img src="./public/img/section5_menu/menu-item-6.png" alt="">';
 
 let laboriosamDescri = document.createElement("h3")
-laboriosamDescri.classList.add('p1')
+laboriosamDescri.classList.add('titre')
 laboriosamDescri.textContent = 'Laboriosam Direva'
 
 let laborDescri = document.createElement("p")
 laborDescri.classList.add('Descri')
 laborDescri.textContent = 'lorem, delen , trataro filede, nerada'
 
-
-
-
-let prixAut = document.createElement('p')
-prixAut.classList.add('blue')
-prixAut.textContent = '$14.95'
-
-let prixEst = document.createElement('p')
-prixEst.classList.add('blue')
-prixEst.textContent = '$8.95'
-
-let prixEos = document.createElement('p')
-prixEos.classList.add('blue')
-prixEos.textContent = '$12.95'
-
-let prixEos2 = document.createElement('p')
-prixEos2.classList.add('blue')
-prixEos2.textContent = '$12.95'
-
 let prixLabo = document.createElement('p')
-prixLabo.classList.add('blue')
+prixLabo.classList.add('prix')
 prixLabo.textContent = '$9.95'
 
-divClick1.addEventListener("click", menuStarters)
-divClick2.addEventListener("click", menuBreakfast)
-divClick3.addEventListener("click", menuLunch)
-divClick4.addEventListener("click", menuDiner)
 
-function menuStarters() {
+// FONCTION 
+ function menuStarters() {
     
     container2.appendChild(titreMenu)
     container2.appendChild(titreStarters) 
     titreStarters.textContent = "Starters"
-    section5.appendChild(container);
-    container.appendChild(ligne1);
-    container.appendChild(ligne2)
+    section5.appendChild(souscontainer);
+    souscontainer.appendChild(ligne1);
+    souscontainer.appendChild(ligne2)
     ligne1.appendChild(image1);
     image1.appendChild(magnamTiste) 
     image1.appendChild(magnamDescri)
@@ -195,7 +230,6 @@ function menuStarters() {
     image2.appendChild(eosDescri)
     image2.appendChild(prixEos)
 
-
     ligne2.appendChild(image4);
     image4.appendChild(eosLuibusdam2)
     image4.appendChild(eos2Descri)
@@ -208,14 +242,16 @@ function menuStarters() {
     
 }
 
-function menuBreakfast() {
+
+
+ function menuBreakfast() {
     
     container2.appendChild(titreMenu)
     container2.appendChild(titreStarters)
     titreStarters.textContent = "Breakfast"
-    section5.appendChild(container);
-    container.appendChild(ligne1);
-    container.appendChild(ligne2)
+    section5.appendChild(souscontainer);
+    souscontainer.appendChild(ligne1);
+    souscontainer.appendChild(ligne2)
     ligne1.appendChild(image1);
     image1.appendChild(magnamTiste) 
     image1.appendChild(magnamDescri)
@@ -236,7 +272,6 @@ function menuBreakfast() {
     image2.appendChild(eosDescri)
     image2.appendChild(prixEos)
 
-
     ligne2.appendChild(image4);
     image4.appendChild(eosLuibusdam2)
     image4.appendChild(eos2Descri)
@@ -249,14 +284,15 @@ function menuBreakfast() {
     
 }
 
-function menuLunch() {
+
+ function menuLunch() {
     
     container2.appendChild(titreMenu)
     container2.appendChild(titreStarters)
     titreStarters.textContent = "Lunch"
-    section5.appendChild(container);
-    container.appendChild(ligne1);
-    container.appendChild(ligne2)
+    section5.appendChild(souscontainer);
+    souscontainer.appendChild(ligne1);
+    souscontainer.appendChild(ligne2)
     ligne1.appendChild(image1);
     image1.appendChild(magnamTiste) 
     image1.appendChild(magnamDescri)
@@ -290,14 +326,15 @@ function menuLunch() {
     
 }
 
-function menuDiner() {
+
+ function menuDiner() {
     
     container2.appendChild(titreMenu)
     container2.appendChild(titreStarters)
     titreStarters.textContent = "Diner"
-    section5.appendChild(container);
-    container.appendChild(ligne1);
-    container.appendChild(ligne2)
+    section5.appendChild(souscontainer);
+    souscontainer.appendChild(ligne1);
+    souscontainer.appendChild(ligne2)
     ligne1.appendChild(image1);
     image1.appendChild(magnamTiste) 
     image1.appendChild(magnamDescri)
@@ -330,3 +367,8 @@ function menuDiner() {
     image6.appendChild(prixLabo)
     
 }
+
+lunchClick.addEventListener("click", menuLunch)
+startClick.addEventListener("click", menuStarters)
+breakClick.addEventListener("click", menuBreakfast)
+dinnerClick.addEventListener("click", menuDiner)

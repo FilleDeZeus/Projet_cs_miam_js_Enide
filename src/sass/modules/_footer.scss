@@ -61,10 +61,10 @@
 .footer .footer-links ul a:hover {
     color: #fff;
 }
-.footer .social-links{
+.footer .social-icone{
     display: flex;
 }
-.footer .social-links a {
+.footer .social-icone a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,7 +78,7 @@
     transition: 0.3s;
 }
 
-.footer .social-links a:hover {
+.footer .social-icone a:hover {
     color: #fff;
     border-color: #fff;
 }
