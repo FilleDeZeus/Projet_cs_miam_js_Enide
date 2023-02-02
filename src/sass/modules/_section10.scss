@@ -1,37 +1,94 @@
-.gallery {
-    overflow: hidden;
-  }
+// .gallery {
+//     overflow: hidden;
+//   }
   
-  .gallery .swiper-pagination {
-    margin-top: 20px;
-    position: relative;
-  }
+//   .gallery .swiper-pagination {
+//     margin-top: 20px;
+//     position: relative;
+//   }
   
-  .gallery .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #d1d1d7;
-    opacity: 1;
-  }
+//   .gallery .swiper-pagination .swiper-pagination-bullet {
+//     width: 12px;
+//     height: 12px;
+//     background-color: #d1d1d7;
+//     opacity: 1;
+//   }
   
-  .gallery .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: var(--color-primary);
-  }
+//   .gallery .swiper-pagination .swiper-pagination-bullet-active {
+//     background-color: var(--color-primary);
+//   }
   
-  .gallery .swiper-slide-active {
-    text-align: center;
-  }
+//   .gallery .swiper-slide-active {
+//     text-align: center;
+//   }
   
-  @media (min-width: 992px) {
-    .gallery .swiper-wrapper {
-      padding: 40px 0;
-    }
+//   @media (min-width: 992px) {
+//     .gallery .swiper-wrapper {
+//       padding: 40px 0;
+//     }
   
-    .gallery .swiper-slide-active {
-      border: 6px solid var(--color-primary);
-      padding: 4px;
-      background: #fff;
-      z-index: 1;
-      transform: scale(1.2);
-    }
+//     .gallery .swiper-slide-active {
+//       border: 6px solid var(--color-primary);
+//       padding: 4px;
+//       background: #fff;
+//       z-index: 1;
+//       transform: scale(1.2);
+//     }
+//   }
+
+#gallery {
+  background-color: $vert;
+  padding: 50px 0;
+
+  .container {
+      width: 100%;
+      overflow: hidden;
+
+      .galleryCarousel {
+          margin-top: 50px;
+          width: 100%;
+          transform: translateX(40%);
+          transition-duration: 1s;
+  
+          .galleryCarouselItems {
+              display: flex;
+              width: 162%;
+  
+              .galleryCarouselItem {
+                  width: 19%;
+                  margin-right: 1%;
+                  
+                  img {
+                      width: 100%;
+                      transition-duration: 1s;
+                  }
+
+                  .imgActiveGallery {
+                      border: 4px solid $vert;
+                      transform: scale(1.2);
+                  }
+              }
+          }
+      }
+  
+      .carouselBtnGallery {
+          display: flex;
+          justify-content: center;
+          margin-top: 50px;
+  
+          button {
+              background-color: grey;
+              width: 10px;
+              height: 10px;
+              border-radius: 20px;
+              border: none;
+              cursor: pointer;
+              margin: 5px;
+          }
+  
+          .btnActiveGallery {
+              background-color: $vert;
+          }
+      }
   }
+}

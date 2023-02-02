@@ -10932,66 +10932,66 @@ readers do not read off random characters that represent icons */
   text-align: center;
 }
 
-#testimonials {
+.section6 {
   background: rgba(255, 255, 255, 0.3);
   padding: 100px 0;
 }
-#testimonials .overflowHiden {
+.section6 .overflowHiden {
   width: 1200px;
   overflow: hidden;
 }
-#testimonials .overflowHiden .containerCarousel {
+.section6 .overflowHiden .containerCarousel {
   display: flex;
   width: 400%;
   transition-duration: 1s;
 }
-#testimonials .overflowHiden .containerCarousel .carouselItem {
+.section6 .overflowHiden .containerCarousel .carouselItem {
   width: 100%;
   margin-top: 50px;
 }
-#testimonials .overflowHiden .containerCarousel .carouselItem .carouselItemContainer {
+.section6 .overflowHiden .containerCarousel .carouselItem .carouselItemContainer {
   width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
 }
-#testimonials .overflowHiden .containerCarousel .carouselItem .carouselItemContainer .greenLine {
+.section6 .overflowHiden .containerCarousel .carouselItem .carouselItemContainer .greenLine {
   width: 6px;
   height: 150px;
   background-color: rgb(134, 209, 209);
   margin-right: 20px;
 }
-#testimonials .overflowHiden .containerCarousel .carouselItem .carouselItemContainer .carouselItemText {
+.section6 .overflowHiden .containerCarousel .carouselItem .carouselItemContainer .carouselItemText {
   font-family: Arial, Helvetica, sans-serif;
 }
-#testimonials .overflowHiden .containerCarousel .carouselItem .carouselItemContainer .carouselItemText h4 {
+.section6 .overflowHiden .containerCarousel .carouselItem .carouselItemContainer .carouselItemText h4 {
   margin: 10px 0 0 0;
 }
-#testimonials .overflowHiden .containerCarousel .carouselItem .carouselItemContainer .carouselItemText p {
+.section6 .overflowHiden .containerCarousel .carouselItem .carouselItemContainer .carouselItemText p {
   margin: 0;
 }
-#testimonials .overflowHiden .containerCarousel .carouselItem .carouselItemContainer .carouselItemText .star {
+.section6 .overflowHiden .containerCarousel .carouselItem .carouselItemContainer .carouselItemText .star {
   color: rgb(253, 207, 0);
   margin-top: 10px;
 }
-#testimonials .overflowHiden .containerCarousel .carouselItem .carouselItemContainer .carouselItemText .fa-solid {
+.section6 .overflowHiden .containerCarousel .carouselItem .carouselItemContainer .carouselItemText .fa-solid {
   color: red;
 }
-#testimonials .overflowHiden .containerCarousel .carouselItem .carouselItemContainer .carouselItemImg {
+.section6 .overflowHiden .containerCarousel .carouselItem .carouselItemContainer .carouselItemImg {
   margin-left: 20px;
 }
-#testimonials .overflowHiden .containerCarousel .carouselItem .carouselItemContainer .carouselItemImg img {
+.section6 .overflowHiden .containerCarousel .carouselItem .carouselItemContainer .carouselItemImg img {
   height: 150px;
   border-radius: 200px;
   border: 3px solid white;
 }
-#testimonials .carouselBtn {
+.section6 .carouselBtn {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
-#testimonials .carouselBtn button {
+.section6 .carouselBtn button {
   background-color: grey;
   width: 10px;
   height: 10px;
@@ -11000,7 +11000,7 @@ readers do not read off random characters that represent icons */
   cursor: pointer;
   margin: 5px;
 }
-#testimonials .carouselBtn .btnActive {
+.section6 .carouselBtn .btnActive {
   background-color: rgb(134, 209, 209);
 }
 
@@ -11215,172 +11215,201 @@ body {
   opacity: 1;
 }
 
-.book-a-table .reservation-img {
-  min-height: 500px;
-  background-size: cover;
-  background-position: center;
+.section9 .bookTable {
+  display: flex;
+  margin: 50px 0;
+}
+.section9 .bookTable .bookImg {
+  width: 33%;
+}
+.section9 .bookTable .bookImg img {
+  width: 100%;
+  display: block;
+}
+.section9 .bookTable .bookForm {
+  width: 67%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 40px;
+  background-color: grey;
+}
+.section9 .bookTable .bookForm .bookFormInput {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.section9 .bookTable .bookForm .bookFormInput input {
+  width: 30%;
+  height: 40px;
+  margin: 10px 0;
+}
+.section9 .bookTable .bookForm textarea {
+  margin: 10px 0;
+  width: 99%;
+}
+.section9 .bookTable .bookForm button {
+  margin: 10px 0;
+  background-color: rgb(134, 209, 209);
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.section9 .bookTable .bookForm button:hover {
+  background-color: red;
 }
 
-.book-a-table .reservation-form-bg {
-  background: rgba(55, 55, 63, 0.04);
+#gallery {
+  background-color: rgb(134, 209, 209);
+  padding: 50px 0;
+}
+#gallery .container {
+  width: 100%;
+  overflow: hidden;
+}
+#gallery .container .galleryCarousel {
+  margin-top: 50px;
+  width: 100%;
+  transform: translateX(40%);
+  transition-duration: 1s;
+}
+#gallery .container .galleryCarousel .galleryCarouselItems {
+  display: flex;
+  width: 162%;
+}
+#gallery .container .galleryCarousel .galleryCarouselItems .galleryCarouselItem {
+  width: 19%;
+  margin-right: 1%;
+}
+#gallery .container .galleryCarousel .galleryCarouselItems .galleryCarouselItem img {
+  width: 100%;
+  transition-duration: 1s;
+}
+#gallery .container .galleryCarousel .galleryCarouselItems .galleryCarouselItem .imgActiveGallery {
+  border: 4px solid rgb(134, 209, 209);
+  transform: scale(1.2);
+}
+#gallery .container .carouselBtnGallery {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+#gallery .container .carouselBtnGallery button {
+  background-color: grey;
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+#gallery .container .carouselBtnGallery .btnActiveGallery {
+  background-color: rgb(134, 209, 209);
 }
 
-.book-a-table .php-email-form {
-  padding: 40px;
+.section11 {
+  width: 100%;
 }
-
-@media (max-width: 575px) {
-  .book-a-table .php-email-form {
-    padding: 20px;
-  }
+.section11 .container {
+  padding-right: 15px;
+  padding-left: 15px;
 }
-.book-a-table .php-email-form h3 {
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.book-a-table .php-email-form h4 {
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 20px 0 0 0;
-}
-
-.book-a-table .php-email-form p {
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-.book-a-table .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #df1529;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.book-a-table .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.book-a-table .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.book-a-table .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #059652;
-  border-top-color: #fff;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-.book-a-table .php-email-form input,
-.book-a-table .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  border-radius: 0;
-}
-
-.book-a-table .php-email-form input:focus,
-.book-a-table .php-email-form textarea:focus {
-  border-color: var(--color-primary);
-}
-
-.book-a-table .php-email-form input {
-  padding: 12px 15px;
-}
-
-.book-a-table .php-email-form textarea {
-  padding: 12px 15px;
-}
-
-.book-a-table .php-email-form button[type=submit] {
-  background: var(--color-primary);
+.section11 .container iframe {
   border: 0;
-  padding: 14px 60px;
+  width: 100%;
+  height: 350px;
+}
+.section11 .container .sousContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.section11 .container .sousContainer .caseContact {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-top: 20px;
+  padding: 20px 0;
+  background-color: #f4f4f4;
+}
+.section11 .container .sousContainer .caseContact i {
+  background-color: rgb(134, 209, 209);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  margin-left: 20px;
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section11 .container .sousContainer .caseContact div {
+  margin-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.section11 .container .sousContainer .caseContact div h3 {
+  font-size: 20px;
+  color: #6c757d;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+.section11 .container .sousContainer .caseContact div p {
+  padding: 0;
+  margin: 0;
+  line-height: 24px;
+  font-size: 14px;
+}
+.section11 .container .form {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+}
+.section11 .container .form .caseForm {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.section11 .container .form .caseForm input {
+  width: 48%;
+  height: 40px;
+  margin: 10px 0;
+}
+.section11 .container .form .form-control {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+}
+.section11 .container .form textarea {
+  width: 100%;
+  margin: 10px 0;
+}
+.section11 .container .form button {
+  background: rgb(134, 209, 209);
+  border: 0;
+  padding: 12px 40px;
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
+  cursor: pointer;
+}
+.section11 .container .form button:hover {
+  background-color: red;
 }
 
-.book-a-table .php-email-form button[type=submit]:hover {
-  background: #ec2727;
-}
-
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.gallery {
-  overflow: hidden;
-}
-
-.gallery .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.gallery .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #d1d1d7;
-  opacity: 1;
-}
-
-.gallery .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
-}
-
-.gallery .swiper-slide-active {
-  text-align: center;
-}
-
-@media (min-width: 992px) {
-  .gallery .swiper-wrapper {
-    padding: 40px 0;
-  }
-  .gallery .swiper-slide-active {
-    border: 6px solid var(--color-primary);
-    padding: 4px;
-    background: #fff;
-    z-index: 1;
-    transform: scale(1.2);
-  }
-}
 .footer {
   font-size: 14px;
   background-color: #1f1f24;
