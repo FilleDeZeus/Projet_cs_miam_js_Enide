@@ -10386,6 +10386,7 @@ readers do not read off random characters that represent icons */
   border-radius: 50px;
   transition: 0.3s;
   text-decoration: none;
+  border: none;
 }
 
 .header .btnbooktable:hover {

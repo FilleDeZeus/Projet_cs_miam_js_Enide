@@ -1,4 +1,4 @@
-
+// --------CREATION DE LA PARTIE MENU EN JS---------- 
 let section5 = document.getElementById('section5');
 let container1 = document.querySelector('.navMenu')
 let container2 = document.querySelector('.contenuMenu')
@@ -166,7 +166,7 @@ prixLabo.classList.add('prix')
 prixLabo.textContent = '$9.95'
 
 
-// FONCTION 
+// -------------FONCTION 
 export function menuStarters() {
     
     container2.appendChild(titreMenu)

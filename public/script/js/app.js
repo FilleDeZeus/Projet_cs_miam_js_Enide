@@ -4,6 +4,7 @@ lunchClick.addEventListener("click", menuLunch)
 startClick.addEventListener("click", menuStarters)
 breakClick.addEventListener("click", menuBreakfast)
 dinnerClick.addEventListener("click", menuDiner)
+
 //-------------------------------------------------------
 // -------------------------CAROUSSEL-----------------------
 //-----------------EVENT CAROUSSEL----------
