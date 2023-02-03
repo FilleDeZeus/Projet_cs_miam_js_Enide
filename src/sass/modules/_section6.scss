@@ -16,7 +16,7 @@
                 margin-top: 50px;
                 
 
-                .carouselItemContainer {
+                .carouselContainer {
                     width: 70%;
                     display: flex;
                     justify-content: center;
@@ -41,9 +41,9 @@
                             margin: 0;
                         }
 
-                        .star {
-                            color: rgb(253, 207, 0);
-                            margin-top: 10px;
+                        .fa-star::before {
+                            
+                            color: rgb(255, 230, 0);
                         }
 
                         .fa-solid {
@@ -51,7 +51,7 @@
                         }
                     }
 
-                    .carouselItemImg {
+                    .testimonialImg {
                         margin-left: 20px;
 
                         img {

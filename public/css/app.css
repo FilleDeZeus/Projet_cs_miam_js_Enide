@@ -10500,6 +10500,8 @@ readers do not read off random characters that represent icons */
   width: 100%;
 }
 .section2 .container {
+  max-width: 1200px;
+  margin: auto;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -10655,19 +10657,9 @@ readers do not read off random characters that represent icons */
   transform: scale(20);
 }
 
-@-webkit-keyframes pulsate-btn {
-  0% {
-    transform: scale(0.8, 0.8);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.5, 1.5);
-    opacity: 0;
-  }
-}
 @keyframes pulsate-btn {
   0% {
-    transform: scale(0.8, 0.8);
+    transform: scale(0.6, 0.6);
     opacity: 1;
   }
   100% {
@@ -10931,39 +10923,38 @@ readers do not read off random characters that represent icons */
   width: 100%;
   margin-top: 50px;
 }
-.section6 .sousContainer .testimonialCase .caseCarousel .carouselItemContainer {
+.section6 .sousContainer .testimonialCase .caseCarousel .carouselContainer {
   width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
 }
-.section6 .sousContainer .testimonialCase .caseCarousel .carouselItemContainer .border {
+.section6 .sousContainer .testimonialCase .caseCarousel .carouselContainer .border {
   width: 6px;
   height: 150px;
   background-color: rgb(134, 209, 209);
   margin-right: 20px;
 }
-.section6 .sousContainer .testimonialCase .caseCarousel .carouselItemContainer .textCarousel {
+.section6 .sousContainer .testimonialCase .caseCarousel .carouselContainer .textCarousel {
   font-family: Arial, Helvetica, sans-serif;
 }
-.section6 .sousContainer .testimonialCase .caseCarousel .carouselItemContainer .textCarousel h4 {
+.section6 .sousContainer .testimonialCase .caseCarousel .carouselContainer .textCarousel h4 {
   margin: 10px 0 0 0;
 }
-.section6 .sousContainer .testimonialCase .caseCarousel .carouselItemContainer .textCarousel p {
+.section6 .sousContainer .testimonialCase .caseCarousel .carouselContainer .textCarousel p {
   margin: 0;
 }
-.section6 .sousContainer .testimonialCase .caseCarousel .carouselItemContainer .textCarousel .star {
-  color: rgb(253, 207, 0);
-  margin-top: 10px;
+.section6 .sousContainer .testimonialCase .caseCarousel .carouselContainer .textCarousel .fa-star::before {
+  color: rgb(255, 230, 0);
 }
-.section6 .sousContainer .testimonialCase .caseCarousel .carouselItemContainer .textCarousel .fa-solid {
+.section6 .sousContainer .testimonialCase .caseCarousel .carouselContainer .textCarousel .fa-solid {
   color: red;
 }
-.section6 .sousContainer .testimonialCase .caseCarousel .carouselItemContainer .carouselItemImg {
+.section6 .sousContainer .testimonialCase .caseCarousel .carouselContainer .testimonialImg {
   margin-left: 20px;
 }
-.section6 .sousContainer .testimonialCase .caseCarousel .carouselItemContainer .carouselItemImg img {
+.section6 .sousContainer .testimonialCase .caseCarousel .carouselContainer .testimonialImg img {
   height: 150px;
   border-radius: 200px;
   border: 3px solid white;
@@ -11088,9 +11079,15 @@ body {
   background-color: #fff;
 }
 
+.section8 .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .section8 .sousContainer {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
