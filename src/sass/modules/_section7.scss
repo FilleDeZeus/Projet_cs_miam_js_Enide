@@ -1,34 +1,25 @@
 
-// .slide1{
-//     background-image: url(../../../public/img/section7_Event/events-1.jpg);
-// }
-// .slide2{
-//     background-image: url(../../../public/img/section7_Event/events-2.jpg);
-// }
-// .slide3{
-//     background-image: url(../../../public/img/section7_Event/events-3.jpg);
-// }
-#events {
+.section7 {
 
-    .eventsCarousel {
+    .container {
         width: 100%;
         overflow: hidden;
         margin-top: 50px;
         
-        .eventsView {
+        .carouselEvent {
             width: 172%;
             display: flex;
             transition-duration: 1s;
             // transform: translateX(-20%);
 
-            .eventsCarouselItem {
+            .eventCase {
                 position: relative;
                 width: 32%;
                 height: 650px;
                 margin-right: 2%;
                 overflow: hidden;
 
-                .eventsTxt {
+                .eventText {
                     position: absolute;
                     bottom: 0;
                     color: white;
@@ -50,7 +41,7 @@
                         font-size: 18px;
                     }
                 }
-                .eventsImg {
+                .eventImage {
                     position: absolute;
                     top: 0;
                     z-index: -1;
@@ -64,7 +55,7 @@
         }
     }
 
-    .carouselBtnEvents {
+    .btnEvents {
         display: flex;
         justify-content: center;
         margin-top: 50px;

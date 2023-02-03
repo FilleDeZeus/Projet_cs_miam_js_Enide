@@ -6,7 +6,7 @@
         width: 1200px;
         overflow: hidden;
 
-        .containerCarousel {
+        .testimonialCase {
             display: flex;
             width: 400%;
             transition-duration: 1s;
@@ -15,7 +15,6 @@
                 width: 100%;
                 margin-top: 50px;
                 
-                // transform: translateX(-100%);
 
                 .carouselItemContainer {
                     width: 70%;
@@ -24,7 +23,7 @@
                     align-items: center;
                     margin: auto;
 
-                    .greenLine {
+                    .border {
                         width: 6px;
                         height: 150px;
                         background-color: $vert;
