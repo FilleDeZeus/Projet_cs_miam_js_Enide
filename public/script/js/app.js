@@ -59,14 +59,13 @@ let currentSlide = 0;
 let slideInterval = null;
 function Auto() {
     slideInterval = setInterval(() => {
+        currentSlide++;
+        if (currentSlide >= btnEvents.length ) {
+            currentSlide = 0;
+        }
     carouselEvent.style.transform = `translateX(${-(currentSlide + 1)*20}%)`;
     document.querySelector(".btnActiveEvents").className = "";
     btnEvents[currentSlide + 1].className = "btnActiveEvents";
-    if (currentSlide === btnEvents.length - 1) {
-        currentSlide = 0;
-    } else {
-        currentSlide++;
-    }
 }, 5000);}
 Auto()
 //-------------GALLERY CAROUSSEL----------------
