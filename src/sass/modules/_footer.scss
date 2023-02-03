@@ -3,68 +3,58 @@
     background-color: #1f1f24;
     padding: 50px 0;
     color: rgba(255, 255, 255, 0.7);
-}
-.footer .container{
-    padding-right: 15px;
-    padding-left: 15px;
-}
-.footer .sousContainer{
-    display: flex;
-    flex-direction: row;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
-.caseFooter{
-    display: flex;
-    align-items: stretch;
-    flex: 0 0 25%;
-    max-width: 25%;
+
+    .container{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .sousContainer{
+        display: flex;
+        flex-direction: row;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+
+        .caseFooter{
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            flex: 0 0 25%;
+            max-width: 25%;
+
+            .icon {
+                margin-right: 15px;
+                font-size: 24px;
+                line-height: 0;
+
+                
+            }
+        
+        }
+    }
+    
 
 }
-.footer .icon {
-    margin-right: 15px;
-    font-size: 24px;
-    line-height: 0;
-}
 
-.footer h4 {
-    font-size: 16px;
-    font-weight: bold;
-    position: relative;
-    padding-bottom: 5px;
-    color: #fff;
-}
 
-.footer .footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
 
-.footer .footer-links ul li {
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-}
 
-.footer .footer-links ul li:first-child {
-    padding-top: 0;
-}
 
-.footer .footer-links ul a {
+
+
+.footer  a {
     color: rgba(255, 255, 255, 0.6);
     transition: 0.3s;
     display: inline-block;
     line-height: 1;
 }
-
-.footer .footer-links ul a:hover {
+.footer  a:hover {
     color: #fff;
 }
-.footer .social-icone{
+.footer .reseaux{
     display: flex;
 }
-.footer .social-icone a {
+.footer .reseaux a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,7 +68,7 @@
     transition: 0.3s;
 }
 
-.footer .social-icone a:hover {
+.footer .reseaux a:hover {
     color: #fff;
     border-color: #fff;
 }
@@ -86,6 +76,6 @@
 .footer .copyright {
     text-align: center;
     padding-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    
 }
 

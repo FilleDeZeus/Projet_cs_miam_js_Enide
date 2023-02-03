@@ -1,22 +1,28 @@
 .section3{
     background-color: #eee;
+
+    .container{
+        padding-right: 15px;
+        padding-left: 15px;
+
+        .sousContainer{
+            display: flex;
+            flex-direction: row;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+
+            .caseChoixGrand{
+                display: flex;
+                flex: 0 0 33.333%;
+                max-width: 33.3333%;
+            }
+        }
+    }
+
 }
 
-.section3 .container{
-    padding-right: 15px;
-    padding-left: 15px;
-}
-.section3 .sousContainer{
-    display: flex;
-    flex-direction: row;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
-.section3 .caseChoixGrand{
-    display: flex;
-    flex: 0 0 33.333%;
-    max-width: 33.3333%;
-}
+
+.section3 
 .section3 .casesChoixPetit{
     display: flex;
     align-items: center;
