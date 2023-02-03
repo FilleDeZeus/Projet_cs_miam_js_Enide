@@ -36,13 +36,23 @@ for (let i = 0; i < btnTestiomonial.length; i++) {
 //-------------GALLERY CAROUSSEL----------------
 let btnCarousel = document.querySelectorAll(".btnGallery > button");
 let carouselGallery = document.querySelector(".carouselGallery");
-// carouselGallery.style.transform = `translateX(${50 -(btnCarousel[i].value)*20}%)`
+let galleryCase = document.querySelectorAll(".carouselGalleryCase > img");
+
+function troisiemeimage() {
+    carouselGallery.style.transform = `translateX(${40 -(2)*20}%)`;
+    document.querySelector(".btnActiveGallery").className="";
+    btnCarousel[2].className="btnActiveGallery";
+    document.querySelector(".imgActiveGallery").className="";
+    galleryCase[2].className="imgActiveGallery";
+  }
+
+  troisiemeimage()
 
 for (let i = 0; i < btnCarousel.length; i++) {
 
     btnCarousel[i].addEventListener("click", ()=>{
 
-        carouselGallery.style.transform = `translateX(${50 -(btnCarousel[i].value)*20}%)`
+        carouselGallery.style.transform = `translateX(${40 -(btnCarousel[i].value)*20}%)`
         document.querySelector(".btnActiveGallery").className="";
         btnCarousel[i].className="btnActiveGallery";
         document.querySelector(".imgActiveGallery").className="";

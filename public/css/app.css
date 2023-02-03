@@ -10599,8 +10599,8 @@ readers do not read off random characters that represent icons */
 .section2 .play-btn:before {
   content: "";
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 115px;
+  height: 115px;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
   -webkit-animation: pulsate-btn 2s;
@@ -10659,7 +10659,7 @@ readers do not read off random characters that represent icons */
 
 @keyframes pulsate-btn {
   0% {
-    transform: scale(0.6, 0.6);
+    transform: scale(0.7, 0.7);
     opacity: 1;
   }
   100% {
@@ -11078,33 +11078,24 @@ body {
 .section8 {
   background-color: #fff;
 }
-
 .section8 .container {
   max-width: 1200px;
   margin: auto;
 }
-
-.section8 .sousContainer {
+.section8 .container .sousContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-
-.section8 .chef {
+.section8 .container .sousContainer .chef {
   display: flex;
   align-items: stretch;
   flex: 0 0 33.333%;
   max-width: 33.3333%;
 }
-
-.section8 img {
-  max-width: 100%;
-  height: auto;
-}
-
-.section8 .chef-member {
+.section8 .container .sousContainer .chef .chef-member {
   overflow: hidden;
   text-align: center;
   border-radius: 5px;
@@ -11112,13 +11103,39 @@ body {
   box-shadow: 0px 0 30px rgba(55, 55, 63, 0.08);
   transition: 0.3s;
 }
-
-.section8 .chef-member .member-img {
+.section8 .container .sousContainer .chef .chef-member .member-img {
   position: relative;
   overflow: hidden;
 }
-
-.section8 .chef-member .member-img:after {
+.section8 .container .sousContainer .chef .chef-member .member-img img {
+  max-width: 100%;
+  height: auto;
+}
+.section8 .container .sousContainer .chef .chef-member .member-img .social {
+  position: absolute;
+  right: -100%;
+  top: 30px;
+  opacity: 0;
+  border-radius: 4px;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 2;
+}
+.section8 .container .sousContainer .chef .chef-member .member-img .social a {
+  transition: color 0.3s;
+  color: rgba(55, 55, 63, 0.4);
+  margin: 15px 12px;
+  display: block;
+  line-height: 0;
+  text-align: center;
+}
+.section8 .container .sousContainer .chef .chef-member .member-img .social a:hover {
+  color: rgba(55, 55, 63, 0.9);
+}
+.section8 .container .sousContainer .chef .chef-member .member-img .social i {
+  font-size: 18px;
+}
+.section8 .container .sousContainer .chef .chef-member .member-img:after {
   position: absolute;
   content: "";
   left: 0;
@@ -11129,67 +11146,33 @@ body {
   background-size: contain;
   z-index: 1;
 }
-
-.section8 .chef-member .social {
-  position: absolute;
-  right: -100%;
-  top: 30px;
-  opacity: 0;
-  border-radius: 4px;
-  transition: 0.5s;
-  background: rgba(255, 255, 255, 0.3);
-  z-index: 2;
-}
-
-.section8 .chef-member .social a {
-  transition: color 0.3s;
-  color: rgba(55, 55, 63, 0.4);
-  margin: 15px 12px;
-  display: block;
-  line-height: 0;
-  text-align: center;
-}
-
-.section8 .chef-member .social a:hover {
-  color: rgba(55, 55, 63, 0.9);
-}
-
-.section8 .chef-member .social i {
-  font-size: 18px;
-}
-
-.section8 .chef-member .member-info {
+.section8 .container .sousContainer .chef .chef-member .member-info {
   padding: 10px 15px 20px 15px;
 }
-
-.section8 .chef-member .member-info h4 {
+.section8 .container .sousContainer .chef .chef-member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
   color: black;
 }
-
-.section8 .chef-member .member-info span {
+.section8 .container .sousContainer .chef .chef-member .member-info span {
   display: block;
   font-size: 14px;
   font-weight: 400;
   color: rgba(33, 37, 41, 0.4);
 }
-
-.section8 .chef-member .member-info p {
+.section8 .container .sousContainer .chef .chef-member .member-info p {
   font-style: italic;
   font-size: 14px;
   padding-top: 15px;
   line-height: 26px;
   color: rgba(33, 37, 41, 0.7);
 }
-
-.section8 .chef-member:hover {
+.section8 .container .sousContainer .chef .chef-member:hover {
   transform: scale(1.08);
   box-shadow: 0px 0 30px rgba(55, 55, 63, 0.15);
 }
-
-.section8 .chef-member:hover .social {
+.section8 .container .sousContainer .chef .chef-member:hover .social {
   right: 8px;
   opacity: 1;
 }
@@ -11286,7 +11269,12 @@ body {
   cursor: pointer;
   margin: 5px;
 }
-.gallery .container .btnGallery button:hover {
+.gallery .container .btnGallery button .btnActiveGallery {
+  background-color: rgb(134, 209, 209);
+  border: rgb(134, 209, 209);
+}
+
+.btnActiveGallery {
   background-color: rgb(134, 209, 209);
 }
 

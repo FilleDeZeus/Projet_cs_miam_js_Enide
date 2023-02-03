@@ -106,8 +106,8 @@
 .section2 .play-btn:before {
     content: "";
     position: absolute;
-    width: 120px;
-    height: 120px;
+    width: 115px;
+    height: 115px;
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
     -webkit-animation: pulsate-btn 2s;
@@ -168,7 +168,7 @@
 
 @keyframes pulsate-btn {
     0% {
-        transform: scale(0.6, 0.6);
+        transform: scale(0.7, 0.7);
         opacity: 1;
     }
 

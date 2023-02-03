@@ -48,16 +48,17 @@
                 cursor: pointer;
                 margin: 5px;
                 
-                // .btnActiveGallery {
-                //     background-color: $vert;
-                // }
-            }
-            button:hover{
-                background-color: $vert;
+                .btnActiveGallery {
+                    background-color: $vert;
+                    border: $vert;
+                }
             }
 
 
             
         }
     }
+}
+.btnActiveGallery {
+    background-color: $vert;
 }

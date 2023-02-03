@@ -1,114 +1,136 @@
-.section8{
+.section8 {
     background-color: #fff;
-}
-.section8 .container{
-    max-width: 1200px;
-    margin: auto;
-}
-.section8 .sousContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+
+
+        .sousContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+
+            .chef {
+                display: flex;
+                align-items: stretch;
+                flex: 0 0 33.333%;
+                max-width: 33.3333%;
+
+
+                .chef-member {
+                    overflow: hidden;
+                    text-align: center;
+                    border-radius: 5px;
+                    background: #fff;
+                    box-shadow: 0px 0 30px rgba(55, 55, 63, 0.08);
+                    transition: 0.3s;
+
+                    .member-img {
+                        position: relative;
+                        overflow: hidden;
+
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                        }
+
+                        .social {
+                            position: absolute;
+                            right: -100%;
+                            top: 30px;
+                            opacity: 0;
+                            border-radius: 4px;
+                            transition: 0.5s;
+                            background: rgba(255, 255, 255, 0.3);
+                            z-index: 2;
+
+                            a {
+                                transition: color 0.3s;
+                                color: rgba(55, 55, 63, 0.4);
+                                margin: 15px 12px;
+                                display: block;
+                                line-height: 0;
+                                text-align: center;
+                            }
+
+ 
+                            a:hover {
+                                color: rgba(55, 55, 63, 0.9);
+                            }
+
+                            i {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+
+
+                    .member-img:after {
+                        position: absolute;
+                        content: "";
+                        left: 0;
+                        bottom: 0;
+                        height: 100%;
+                        width: 100%;
+                        background: url(../../../public/img/section8_chefs/wave.svg) no-repeat center bottom;
+                        background-size: contain;
+                        z-index: 1;
+                    }
+
+                    .member-info {
+                        padding: 10px 15px 20px 15px;
+
+                        h4 {
+                            font-weight: 700;
+                            margin-bottom: 5px;
+                            font-size: 20px;
+                            color: black;
+                        }
+                        span {
+                            display: block;
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgba(33, 37, 41, 0.4);
+                        }
+                        p {
+                            font-style: italic;
+                            font-size: 14px;
+                            padding-top: 15px;
+                            line-height: 26px;
+                            color: rgba(33, 37, 41, 0.7);
+                        }
+                    }
+
+                }
+                .chef-member:hover {
+                    transform: scale(1.08);
+                    box-shadow: 0px 0 30px rgba(55, 55, 63, 0.15);
+
+                    .social {
+                        right: 8px;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+    }
 }
 
-.section8 .chef{
-    display: flex;
-    align-items: stretch;
-    flex: 0 0 33.333%;
-    max-width: 33.3333%;
-}
-.section8 img {
-    max-width: 100%;
-    height: auto;
-}
-.section8 .chef-member {
-    overflow: hidden;
-    text-align: center;
-    border-radius: 5px;
-    background: #fff;
-    box-shadow: 0px 0 30px rgba(55, 55, 63, 0.08);
-    transition: 0.3s;
-}
 
-.section8 .chef-member .member-img {
-    position: relative;
-    overflow: hidden;
-}
 
-.section8 .chef-member .member-img:after {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    background: url(../../../public/img/section8_chefs/wave.svg) no-repeat center bottom;
-    background-size: contain;
-    z-index: 1;
-}
 
-.section8 .chef-member .social {
-    position: absolute;
-    right: -100%;
-    top: 30px;
-    opacity: 0;
-    border-radius: 4px;
-    transition: 0.5s;
-    background: rgba(255, 255, 255, 0.3);
-    z-index: 2;
-}
 
-.section8 .chef-member .social a {
-    transition: color 0.3s;
-    color: rgba(55, 55, 63, 0.4);
-    margin: 15px 12px;
-    display: block;
-    line-height: 0;
-    text-align: center;
-}
+ 
 
-.section8 .chef-member .social a:hover {
-    color: rgba(55, 55, 63, 0.9);
-}
+ 
+ 
 
-.section8 .chef-member .social i {
-    font-size: 18px;
-}
 
-.section8 .chef-member .member-info {
-    padding: 10px 15px 20px 15px;
-}
+ 
+ 
 
-.section8 .chef-member .member-info h4 {
-    font-weight: 700;
-    margin-bottom: 5px;
-    font-size: 20px;
-    color: black;
-}
-
-.section8 .chef-member .member-info span {
-    display: block;
-    font-size: 14px;
-    font-weight: 400;
-    color: rgba(33, 37, 41, 0.4);
-}
-
-.section8 .chef-member .member-info p {
-    font-style: italic;
-    font-size: 14px;
-    padding-top: 15px;
-    line-height: 26px;
-    color: rgba(33, 37, 41, 0.7);
-}
-
-.section8 .chef-member:hover {
-    transform: scale(1.08);
-    box-shadow: 0px 0 30px rgba(55, 55, 63, 0.15);
-}
-
-.section8 .chef-member:hover .social {
-    right: 8px;
-    opacity: 1;
-}
+ 
