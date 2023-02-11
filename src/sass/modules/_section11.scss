@@ -10,7 +10,7 @@
         }
         .sousContainer {
             display: flex;
-            //flex-direction: row;
+            // flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
             padding-top: 1.5rem;
@@ -19,7 +19,7 @@
             .caseContact {
                 display: flex;
                 align-items: center;
-                width: 50%;
+                width: 45%;
                 margin-top: 20px;
                 padding: 20px 0;
                 background-color: #f4f4f4;
@@ -63,7 +63,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 100%;
             padding: 15px;
             background: #fff;
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
@@ -74,11 +73,13 @@
                 justify-content: space-between;
 
                 input{
-                    width: 48%;
+                    width: 45%;
                     height: 40px;
                     margin: 10px 0;
                 }
             }
+            
+            
             .form-control{
                 width: 100%;
                 height: 40px;
@@ -100,6 +101,16 @@
             }
             button:hover {
                 background-color: red;
+            }
+        }
+        @media (max-width: 475px) {
+            .form{
+            // margin: 0px;
+            // display: flex;
+            // align-items: center;
+            // padding: 5px;
+            // background: #fff;
+            
             }
         }
     }

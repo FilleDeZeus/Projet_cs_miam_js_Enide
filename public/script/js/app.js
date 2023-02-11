@@ -31,16 +31,17 @@ for (let i = 0; i < btnTestiomonial.length; i++) {
         btnTestiomonial[i].className = "btnActive";
     });
 }
-function Auto1 () { 
+
+function Auto1() {
     intervalId = setInterval(() => {
-    currentIndex++;
-    if (currentIndex >= btnTestiomonial.length) {
-    currentIndex = 0;
-    }
-    testimonialCase.style.transform = `translateX(${-(btnTestiomonial[currentIndex].value)*25}%)`;
-    document.querySelector(".btnActive").className = "";
-    btnTestiomonial[currentIndex].className = "btnActive";
-}, 4000);
+        currentIndex++;
+        if (currentIndex >= btnTestiomonial.length) {
+            currentIndex = 0;
+        }
+        testimonialCase.style.transform = `translateX(${-(btnTestiomonial[currentIndex].value)*25}%)`;
+        document.querySelector(".btnActive").className = "";
+        btnTestiomonial[currentIndex].className = "btnActive";
+    }, 4000);
 }
 Auto1()
 
@@ -57,16 +58,18 @@ for (let i = 0; i < btnEvents.length; i++) {
 }
 let currentSlide = 0;
 let slideInterval = null;
+
 function Auto() {
     slideInterval = setInterval(() => {
         currentSlide++;
-        if (currentSlide >= btnEvents.length ) {
+        if (currentSlide >= btnEvents.length) {
             currentSlide = 0;
         }
-    carouselEvent.style.transform = `translateX(${-(currentSlide + 1)*20}%)`;
-    document.querySelector(".btnActiveEvents").className = "";
-    btnEvents[currentSlide + 1].className = "btnActiveEvents";
-}, 5000);}
+        carouselEvent.style.transform = `translateX(${-(currentSlide + 1)*20}%)`;
+        document.querySelector(".btnActiveEvents").className = "";
+        btnEvents[currentSlide + 1].className = "btnActiveEvents";
+    }, 5000);
+}
 Auto()
 //-------------GALLERY CAROUSSEL----------------
 let btnCarousel = document.querySelectorAll(".btnGallery > button");
@@ -103,7 +106,7 @@ function Auto2() {
 
         currentIndex1++;
         if (currentIndex1 >= btnCarousel.length) {
-            currentIndex1 = 0 ;
+            currentIndex1 = 0;
         }
         carouselGallery.style.transform = `translateX(${40 -(btnCarousel[currentIndex1].value)*20}%)`;
         document.querySelector(".btnActiveGallery").className = "";
@@ -145,4 +148,27 @@ window.addEventListener("click", function (event) {
     if (event.target == bookingModal) {
         bookingModal.style.display = "none";
     }
+});
+
+//BTN POUR REMONTER EN HAUT ET VERS LE BAS
+document.getElementById("scrollUp").addEventListener("click", function () {
+    window.scrollTo(0, 0);
+});
+
+document.getElementById("scrollDown").addEventListener("click", function () {
+    window.scrollTo(0, document.body.scrollHeight);
+});
+
+$(document).ready(function () {
+    $("#js-navbar-toggle").click(function (e) {
+        e.preventDefault();
+        $("#js-menu").slideToggle();
+    });
+});
+
+const toggleBtn = document.querySelector('.navbar-toggle');
+const navbarList = document.querySelector('.navbar-list');
+
+toggleBtn.addEventListener('click', function() {
+    navbarList.classList.toggle('active');
 });

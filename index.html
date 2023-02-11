@@ -11,14 +11,18 @@
 
 <body>
     <!-- ------------HEADER------- -->
-    <header class="header">
+    
+    <header class="header" >
         <a class="titre" href="./index.html">
             <h1>Miam<span>.</span></h1>
         </a>
         <nav class="navbar">
-            <ul>
+            <a href="#" class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            <ul class ='navbar-list' id="jsmenu">
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="#section1">About</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="http://">Menu</a></li>
                 <li><a href="http://">Events</a></li>
                 <li><a href="http://">Chefs</a></li>
@@ -26,6 +30,8 @@
                 <li><a href="http://">Contact</a></li>
             </ul>
         </nav>
+        <button class="scroll-button" id="scrollUp"><i class="fa-solid fa-arrow-up"></i></button>
+        <button class="scroll-button" id="scrollDown"><i class="fa-solid fa-arrow-down"></i></button>
         <button class="btnbooktable">Book a Table</button>
         <button id="darkMode"><i class="fa-solid fa-moon"></i></button>
         <div id="bookingModal" class="modal">
@@ -67,7 +73,7 @@
     </div>
     </section>
     <!-- SECTION 2 - ABOUT-US -->
-    <section class="section2">
+    <section id="about"  class="section2">
         <div class="container">
             <div class="section-header">
                 <h2>About</h2>
